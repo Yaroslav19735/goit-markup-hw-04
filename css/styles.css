@@ -143,6 +143,10 @@ a {
     margin-left: 50px;
 }
 
+.header-mail {
+    margin-left: 0px;
+}
+
 .header-contact {
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     
@@ -175,7 +179,7 @@ a {
 
 /* Секція про нас */
 .about {
-    min-width: 1600px;
+    max-width: 1600px;
     height: 600px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     background-color: #2F303A;
@@ -395,10 +399,8 @@ a {
     line-height: 1.19;
     letter-spacing: 0.03em;
     color: var(--p-color);
+    margin-bottom: 16px;
 }
-
-
-
 
 /* Постійні клієнти */
 
@@ -414,9 +416,14 @@ a {
 }
 
 .clients-icon {
-    padding: 16px 32px 16px 32px;
+    width: calc(100% / 6 - 30px);
+    margin-top: 92px;
+    display: flex;
+    justify-content: center;
     border: 1px solid var(--fill-color);
     border-radius: 4px;
+    
+    
 }
 
 .clients-icon:not(:last-child) {
@@ -430,6 +437,7 @@ a {
 
 .link-icon {
     fill: var(--fill-color);
+    
 
 }
 
@@ -483,6 +491,17 @@ a {
 .footer-content {
     display: flex;
     flex-direction: column;
+    
+}
+
+.header-logof {
+    font-style: normal;
+    font-family: var(--secondary-font), "sans-serif";
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    color: var(--accent-color);
+    margin-bottom: 20px;
 }
 
 .logo-footer {
@@ -667,4 +686,5 @@ hr {
 
 .card-img {
     margin: 15px;
+    background: #FFFFFF;
 }
