@@ -404,6 +404,10 @@ a {
 
 /* Постійні клієнти */
 
+.section {
+    padding: 94px 0;
+}
+
 .clients-box {
     margin-top: 94px;
     margin-bottom: 94px;
@@ -417,9 +421,10 @@ a {
 
 .clients-icon {
     width: calc(100% / 6 - 30px);
-    margin-top: 92px;
+    height: 92px;
     display: flex;
     justify-content: center;
+    align-items: center;
     border: 1px solid var(--fill-color);
     border-radius: 4px;
     
@@ -687,4 +692,10 @@ hr {
 .card-img {
     margin: 15px;
     background: #FFFFFF;
+}
+
+.card-img:hover,
+.card-img:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+    
 }
